@@ -9,3 +9,28 @@
 //      * `updateOne()`
 
 //    * Export the ORM object in `module.exports`.
+
+// Importing MySQL Connection:
+const connection = require("./connection.js");
+
+// Select All:
+
+const orm = {
+	selectAll: function() {
+		var query = "SELECT * FROM burgers";
+		connection.query(query, function(err, res) {
+			if (err) throw err;
+			console.log(res);
+		});
+	},
+
+	insertOne: function() {
+		var query = "INSERT INTO burgers (burger_name, devour) VALUES (? , ?)";
+		connection.query(query, function(err, res) {
+			if (err) throw err;
+			console.log(res);
+		});
+	},
+
+	updateOne: function() {}
+};
