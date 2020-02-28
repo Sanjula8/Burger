@@ -9,12 +9,21 @@
 const orm = require("../config/orm");
 
 const burger = {
-	selectAll: function(cb) {
-		orm.selectAll("burgers", function(res) {
-			cb(res);
-		});
-	},
-	insertOne: function(cb) {
-		orm.insertOne("burgers", function(res) {});
+	selectAll: async () => {
+		const response = await orm.selectAll("burgers");
+		return response;
 	}
 };
+
+// const burger = {
+// 	selectAll: function(cb) {
+// 		orm.selectAll("burgers", function(res) {
+// 			cb(res);
+// 		});
+// 	},
+// 	insertOne: function(cb) {
+// 		orm.insertOne("burgers", function(res) {});
+// 	}
+// };
+
+module.exports = burger;
