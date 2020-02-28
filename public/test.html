@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bob's Burgers</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+        
+        <style>
+            .jumbotron {
+            font-family: 'Anton';
+            background-color: rgb(237, 201, 139, 0.5);
+            background-size: 100% 100%;
+            color: white;
+            }
+            body {
+                background-color: rgb(237, 201, 139);
+                background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/53/22/68QdVc.png");
+                color: white;
+                font-family: 'Anton';
+
+                
+            }
+            .card {
+                background-color:rgb(237, 201, 139);
+            }
+        </style>
+	</head>
+	<body>
+
+		<!-- Jumbotron -->
+		<header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-4 text-center">Eat Bob's Burgers!</h1>
+                            <p class="lead"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</header>
+		<!-- End Jumbotron -->
+    <main class="container">
+		<aside class="container">
+            <div class="row text-center bg-light">
+				<div class="card card-body">
+					<form id="form" class="form-inline align-items-center">
+						<div class="col-md-8">
+							<div class="input-group md-2">
+								<input
+									type="text"
+									id="inputBurger"
+									class="form-control"
+									placeholder="Enter a burger you want to eat"
+								/>
+							</div>
+						</div>
+
+						<div class="col">
+							<button
+								type="submit"
+								id="submitBurger"
+								class="btn btn-warning submitBurger"
+							>
+								Submit Your Burger
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+        </aside>
+        <aside class="container">
+            <div class="row mt-5">
+				<div class="col-md-6">
+					<h3 class="text-center">Burgers ready to eat</h3>
+					<div class="list-group">
+						<a
+							href="#"
+							class="list-group-item list-group-item-action"
+						>
+							<button
+								data-id="{{id}}"
+								data-devoured="{{devoured}}"
+								class="btn btn-warning ml-3"
+								id="eatBurger"
+							>
+								Eat
+							</button>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3 class="text-center">Burgers Eaten</h3>
+					<div class="list-group">
+						<a
+							href="#"
+							class="list-group-item list-group-item-action disabled"
+						>
+							<i class="fas fa-hamburger"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+        </aside>
+    </main>
+    
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
+

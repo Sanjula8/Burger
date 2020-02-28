@@ -1,0 +1,16 @@
+.jumbotron {
+	font-family: "Anton";
+	background-color: rgb(237, 201, 139, 0.5);
+	background-size: 100% 100%;
+	color: white;
+}
+body {
+	background-color: rgb(237, 201, 139);
+	/* background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/53/22/68QdVc.png"); */
+	background-image: url("/public/assets/img/bobsburger-background.png");
+	color: white;
+	font-family: "Anton";
+}
+.card {
+	background-color: rgb(237, 201, 139);
+}
