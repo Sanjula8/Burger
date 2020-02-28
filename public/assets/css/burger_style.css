@@ -7,7 +7,7 @@
 body {
 	background-color: rgb(237, 201, 139);
 	/* background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/53/22/68QdVc.png"); */
-	background-image: url("/public/assets/img/bobsburger-background.png");
+	background-image: url("../img/bobsburger-background.png");
 	color: white;
 	font-family: "Anton";
 }

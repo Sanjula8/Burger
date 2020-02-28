@@ -7,6 +7,7 @@
 //      * `selectAll()`
 //      * `insertOne()`
 //      * `updateOne()`
+//      * `deleteOne()`
 
 //    * Export the ORM object in `module.exports`.
 
@@ -16,23 +17,28 @@ const connection = require("./connection.js");
 // Select All:
 
 const orm = {
-	selectAll: function() {
-		var query = "SELECT * FROM burgers";
+	selectAll: function(cb) {
+		var query = "SELECT * FROM burgers;";
 		connection.query(query, function(err, res) {
-			if (err) throw err;
-			console.log(res);
-		});
-	},
-
-	insertOne: function() {
-		var query = "INSERT INTO burgers (burgerName, devour) VALUES (? , ?)";
-		connection.query(query, function(err, res) {
-			if (err) throw err;
-			console.log(res);
+			if (err) {
+				throw err;
+			}
+			// console.log("ERR:", err);
+			cb(res);
 		});
 	}
 
+	// insertOne: function() {
+	// 	var query = "INSERT INTO burgers (burgerName, devour) VALUES (? , ?)";
+	// 	connection.query(query, function(err, res) {
+	// 		if (err) throw err;
+	// 		console.log(res);
+	// 	});
+	// }
+
 	// updateOne: function() {}
+
+	// deleteOne: function () {}
 };
 
 module.exports = orm;

@@ -13,10 +13,11 @@ const orm = require("../config/orm");
 
 router.get("/", function(req, res) {
 	orm.selectAll(function(data) {
+		console.log(data);
 		var object = {
 			burgers: data
 		};
-		console.log(object);
+		// console.log(err);
 		res.render("index", object);
 	});
 });
@@ -24,5 +25,7 @@ router.get("/", function(req, res) {
 // router.post("/", function(req, res) {});
 
 // router.put("/:id", function(req, res) {});
+
+// router.delete("/:id", function (req, res) {})
 
 module.exports = router;
