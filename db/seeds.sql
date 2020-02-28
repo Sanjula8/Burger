@@ -8,4 +8,4 @@ INSERT INTO burgers (burgerName) VALUES
 ("Cheeses is Born Burger (comes with baby Swiss cheese)"),
 ("Don't You Four Cheddar 'Bout Me Burger (comes with four kinds of cheddar)"),
 ("Chorizo Your Own Adventure Burger"),
-("Beets Me Burger")
+("Beets Me Burger");
