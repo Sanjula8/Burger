@@ -6,14 +6,14 @@
 
 // * Export at the end of the `burger.js` file.
 
-const orm = require("../config/orm");
+// const orm = require("../config/orm");
 
-const burger = {
-	selectAll: async () => {
-		const response = await orm.selectAll("burgers");
-		return response;
-	}
-};
+// const burger = {
+// 	selectAll: async () => {
+// 		const response = await orm.selectAll("burgers");
+// 		return response;
+// 	}
+// };
 
 // const burger = {
 // 	selectAll: function(cb) {

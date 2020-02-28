@@ -25,14 +25,14 @@ const orm = {
 	},
 
 	insertOne: function() {
-		var query = "INSERT INTO burgers (burger_name, devour) VALUES (? , ?)";
+		var query = "INSERT INTO burgers (burgerName, devour) VALUES (? , ?)";
 		connection.query(query, function(err, res) {
 			if (err) throw err;
 			console.log(res);
 		});
-	},
+	}
 
-	updateOne: function() {}
+	// updateOne: function() {}
 };
 
 module.exports = orm;
