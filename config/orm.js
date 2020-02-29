@@ -26,19 +26,37 @@ const orm = {
 			// console.log("ERR:", err);
 			cb(res);
 		});
+	},
+
+	insertOne: function(burger, devour, cb) {
+		var query = "INSERT INTO burgers (burgerName) VALUES (?)";
+		connection.query(query, burger, function(err, res) {
+			if (err) {
+				throw err;
+			}
+			cb(res);
+		});
+	},
+
+	updateOne: function(id, cb) {
+		var query = "UPDATE burgers SET devoured = true WHERE id = " + id;
+		connection.query(query, function(err, res) {
+			if (err) {
+				throw err;
+			}
+			cb(res);
+		});
+	},
+
+	deleteOne: function(id, cb) {
+		var query = "DELETE FROM burgers WHERE id = " + id;
+		connection.query(query, function(err, res) {
+			if (err) {
+				throw err;
+			}
+			cb(res);
+		});
 	}
-
-	// insertOne: function() {
-	// 	var query = "INSERT INTO burgers (burgerName, devour) VALUES (? , ?)";
-	// 	connection.query(query, function(err, res) {
-	// 		if (err) throw err;
-	// 		console.log(res);
-	// 	});
-	// }
-
-	// updateOne: function() {}
-
-	// deleteOne: function () {}
 };
 
 module.exports = orm;

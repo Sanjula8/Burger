@@ -22,10 +22,23 @@ router.get("/", function(req, res) {
 	});
 });
 
-// router.post("/", function(req, res) {});
+router.post("/burgers/create", function(req, res) {
+	orm.insertOne(req.body.name, false, function(data) {
+		console.log(data);
+		res.redirect("/");
+	});
+});
 
-// router.put("/:id", function(req, res) {});
+router.put("/burgers/:id", function(req, res) {
+	orm.updateOne(req.params.id, function(data) {
+		res.sendStatus(200);
+	});
+});
 
-// router.delete("/:id", function (req, res) {})
+router.delete("/burgers/:id", function(req, res) {
+	orm.deleteOne(req.params.id, function(data) {
+		res.sendStatus(200);
+	});
+});
 
 module.exports = router;
