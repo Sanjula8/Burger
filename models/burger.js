@@ -1,3 +1,5 @@
+// This File is not needed, however, keeping it to show folder layout:
+
 // * In `models`, make a `burger.js` file.
 
 // * Inside `burger.js`, import `orm.js` into `burger.js`
@@ -26,4 +28,4 @@
 // 	}
 // };
 
-module.exports = burger;
+// module.exports = burger;
