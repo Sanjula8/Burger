@@ -1,3 +1,5 @@
+// Created Script file to have Buttons work:
+
 $(function() {
 	$(".eatBurger").on("click", function(event) {
 		var id = $(this).data("id");

@@ -1,10 +1,6 @@
-// 3. Inside the `burgers_controller.js` file, import the following:
+// Create the `router` for the app, and export the `router` at the end of your file.
 
-//    * Express
-//    * `burger.js`
-
-// 4. Create the `router` for the app, and export the `router` at the end of your file.
-
+// Require express and orm file:
 const express = require("express");
 const router = express.Router();
 const orm = require("../config/orm");
