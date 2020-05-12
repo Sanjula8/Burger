@@ -1,11 +1,10 @@
 # Burger
 
-# Deployment
+## Deployment
 [Heroku](https://evening-dawn-88677.herokuapp.com/)
 
 ![](./homeworkinst/BobsBurgers.gif)
 
-# User Directory
 [![Contributors][contributors-shield]][contributors-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
