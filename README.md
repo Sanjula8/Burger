@@ -12,7 +12,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-    * [Built With](#built-with)
+    * [Uses](#uses)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -24,8 +24,10 @@ This app uses SQL, ORM, Express, and Handlebars to create a Burger Eating App.
 
 Based off the famous show, Bob's Burgers, this app allows you to eat famous burgers. Each burger in the waiting area has a `Eat` button. When the user clicks it, the burger will move to the right side of the page, where a `Delete` button will then appear. Clicking this button will remove it from the list on the right.
 
-### Built With
+### Uses
 
+ [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
+ [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
  [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
  [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
